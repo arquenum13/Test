@@ -12,7 +12,7 @@ my_packages = c("shiny","htmlwidgets","leaflet", "RJSONIO", "rgdal","maptools")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
-    install.packages(p, dependencies = TRUE)
+    install.packages(p, dependencies = TRUE, type="source")
   }
   else {
     cat(paste("Skipping already installed package:", p, "\n"))
