@@ -6,13 +6,13 @@
 ###########################################################
 # Update this line with the R packages to install:
 
-my_packages = c("shiny","htmlwidgets","leaflet", "RJSONIO", "rgdal","maptools")
+my_packages = c("shiny","htmlwidgets","leaflet", "RJSONIO", "maptools")
 
 ###########################################################
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
-    install.packages(p, dependencies = FALSE)
+    install.packages(p, dependencies = TRUE)
   }
   else {
     cat(paste("Skipping already installed package:", p, "\n"))
