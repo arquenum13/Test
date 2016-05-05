@@ -1,4 +1,9 @@
+library(htmlwidgets)
 library(shiny)
+library(leaflet)
+library(RJSONIO)
+library(rgdal)
+library(maptools)
 
 port <- Sys.getenv('PORT')
 
