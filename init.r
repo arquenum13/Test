@@ -6,7 +6,7 @@
 ###########################################################
 # Update this line with the R packages to install:
 
-my_packages = c("shiny","htmlwidgets","leaflet", "RJSONIO", "rgdal", "maptools")
+my_packages = c("devtools", "shiny","htmlwidgets","leaflet", "RJSONIO", "rgdal", "maptools")
 
 ###########################################################
 
