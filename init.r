@@ -19,5 +19,3 @@ install_if_missing = function(p) {
   }
 }
 invisible(sapply(my_packages, install_if_missing))
-
-install.packages("rgdal", repos="http://R-Forge.R-project.org")
